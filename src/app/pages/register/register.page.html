@@ -1,0 +1,39 @@
+<ion-content [fullscreen]="true">
+  <div class="glass-content">
+    <ion-grid>
+        <ion-row>
+            <ion-col class="ion-text-center">
+                <img class="logo pulsate-fwd" src="assets/img/tigre.png" alt="logo">
+            </ion-col>
+        </ion-row>
+      <ion-row>
+        <ion-col class="ion-text-center">
+            <ion-card class="card-container box">
+              <form [formGroup] = "formularioRegistro">
+                <ion-item class=" label-container">
+                  <ion-label class="ion-text-center" position="floating">Usuario</ion-label>
+                  <ion-input formControlName="nombre" type="text"></ion-input>
+                </ion-item>
+                <ion-item class="label-container">
+                  <ion-label position="floating" class="ion-text-center ">Password</ion-label>
+                  <ion-input formControlName="password" type="password"></ion-input>
+                </ion-item>
+                <ion-item class="label-container">
+                  <ion-label position="floating" class="ion-text-center ">Email</ion-label>
+                  <ion-input formControlName="email" type="text"></ion-input>
+                </ion-item>
+              </form>
+            </ion-card>
+        </ion-col>
+      </ion-row>
+
+     
+
+      <ion-row>
+        <ion-col class="ion-text-center">
+          <ion-button  shape="round" class="boton-registro" color="success">Registrar</ion-button> 
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+</ion-content>

@@ -1,0 +1,26 @@
+<ion-content [fullscreen]="true">
+  <ion-row>
+    <ion-col class="ion-text-center">
+        <img class="logo" src="assets/img/tigre.png" alt="logo">
+    </ion-col>
+  </ion-row>
+  <ion-card class="card-edit">
+    <ion-item>
+      <ion-label position="floating">Nombre de Zoologico</ion-label>
+      <ion-input [(ngModel)]="zoologico.nombre"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Calificacion</ion-label>
+      <ion-input [(ngModel)]="zoologico.calificacion"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Ciudad</ion-label>
+      <ion-input [(ngModel)]="zoologico.ciudad"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Pais</ion-label>
+      <ion-input [(ngModel)]="zoologico.pais"></ion-input>
+    </ion-item>       
+    <ion-button type="button" expand="block" (click)="updateZoo()" color="success" shape="round">Actualizar info Zoo</ion-button>    
+</ion-card>
+</ion-content>

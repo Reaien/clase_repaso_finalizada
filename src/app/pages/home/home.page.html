@@ -1,0 +1,69 @@
+<ion-content [fullscreen]="true">
+  <div class="glass-content">
+    <ion-grid>
+      <ion-row>
+        <ion-col class="ion-text-center">
+            <img class="logo" src="assets/img/tigre.png" alt="logo">
+        </ion-col>
+        <ion-col size="6" class="ion-text-center">
+          <ion-card>
+            <ion-card-title>Hola {{data.usuario}}</ion-card-title>
+          </ion-card>
+          <ion-button (click)="cerrarSesion()" color="success" type="button" expand="block" shape="round">
+            Cerrar sesión
+          </ion-button>
+        </ion-col>
+      </ion-row>
+      <ion-card>
+        <ion-card-header>
+          <ion-title>Ingresar Zoologico</ion-title>
+        </ion-card-header>
+        <ion-item>
+          <ion-label position="floating">Nombre de Zoologico</ion-label>
+          <ion-input [(ngModel)]="zoologico.nombre"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Calificacion</ion-label>
+          <ion-input [(ngModel)]="zoologico.calificacion"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Ciudad</ion-label>
+          <ion-input [(ngModel)]="zoologico.ciudad"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Pais</ion-label>
+          <ion-input [(ngModel)]="zoologico.pais"></ion-input>
+        </ion-item>
+        <ion-grid>
+          <ion-row>
+            <ion-col><ion-button shape="round" expand="block" (click)="limpiar()">Limpiar</ion-button></ion-col>
+            <ion-col><ion-button shape="round" expand="block" (click)="addZoo()" >Agregar Zoologico</ion-button></ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-card>
+      <ion-row *ngFor="let zoo of zoologicos">
+        <ion-col class="ion-text-center" size="12">
+          <ion-card>
+            <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/card-media.png" />
+            <ion-card-header>
+              <ion-card-title>{{zoo.nombre}}</ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+              Ciudad: {{zoo.ciudad}} 
+              <br>
+              Calificacion: {{zoo.calificacion}}
+            </ion-card-content>
+            <ion-row>
+              <ion-col size="6">
+                <ion-button color="warning" [routerLink]="['/edit-zoo',zoo.id]" (click)="getZooId(zoo.id)" expand="block"  shape="round">Editar</ion-button>
+              </ion-col>
+              <ion-col size="6">
+                <ion-button color="danger" type="button" (click)="deleteZoo(zoo.id)" expand="block" shape="round">Borrar</ion-button>
+              </ion-col>
+            </ion-row>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+</ion-content>

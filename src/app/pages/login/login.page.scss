@@ -1,0 +1,31 @@
+
+ion-content{
+    --ion-background-color: url(/assets/img/fondo.jpg) no-repeat center center / cover;
+    
+}
+
+ion-card{
+    --ion-background-color: rgba(197, 197, 197, 0.774);
+}
+
+.glass-content {
+/* From https://css.glass */
+    background: rgba(44, 44, 44, 0.548);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.432);
+    backdrop-filter: blur(2.1px);
+    -webkit-backdrop-filter: blur(15.1px);
+    width: 100%;
+    min-height: 100vh;
+}
+
+.card-container{
+    margin-top: 20%;
+    padding-bottom: 2%;
+}
+
+.logo{
+    max-width: 50%;
+    opacity: 95%;
+    margin-top: 5%;
+}

@@ -1,0 +1,25 @@
+{
+  "zoologicos": [
+    {
+      "id": 1,
+      "nombre": "BuinZoo",
+      "calificacion": "Bueno",
+      "ciudad": "Buincito",
+      "pais": "Chile"
+    },
+    {
+      "id": 2,
+      "nombre": "Zoologico de Santiago",
+      "calificacion": "Normal",
+      "ciudad": "Santiago",
+      "pais": "Chile"
+    },
+    {
+      "id": 3,
+      "nombre": "Parque Safari",
+      "calificacion": "Malo",
+      "ciudad": "La Granja",
+      "pais": "Chile"
+    }
+  ]
+}

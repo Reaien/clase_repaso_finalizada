@@ -1,0 +1,31 @@
+
+ion-content{
+    --ion-background-color: url(/assets/img/fondo.jpg) no-repeat center center / cover;
+    
+}
+
+.glass-content {
+/* From https://css.glass */
+    background: rgba(44, 44, 44, 0.548);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.432);
+    backdrop-filter: blur(2.1px);
+    -webkit-backdrop-filter: blur(15.1px);
+    width: 100%;
+    min-height: 100vh;
+}
+
+.row-botones{
+    margin-top: 10rem;
+}
+
+.botones-inicio{
+    width: 15rem;
+}
+
+.titulo{
+    margin-top: 6rem;
+    font-size: 40px;
+    font-weight: bolder;
+    color: white;
+}
